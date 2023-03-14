@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Converter</title>
+</head>
+
+<body>
+    <input type="file" id="file-input">
+    <select id="input-format">
+        <option value="png">PNG</option>
+        <option value="jpg">JPG</option>
+    </select>
+    <select id="output-format">
+        <option value="png">PNG</option>
+        <option value="jpg">JPG</option>
+    </select>
+    <button id="convert-button">Convert</button>
+    <br>
+    <img id="input-image">
+    <br>
+    <img id="output-image">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jimp/0.11.0/jimp.min.js"></script>
+    <script src="js/script.js"> </script>
+</body>
+
+</html>
