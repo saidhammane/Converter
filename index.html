@@ -13,6 +13,8 @@
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
 
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Converter</title>
 </head>
 
@@ -23,8 +25,7 @@
         <div class="container">
             <!-- Navbar brand -->
             <a class="navbar-brand" href="https://mdbgo.com/">
-                <img src="img/logo.png" height="16" alt="MDB Logo"
-                    loading="lazy" style="margin-top: -1px;" />
+                <img src="img/logo.png" height="50" alt="MDB Logo" loading="lazy" style="margin-top: -1px;" />
             </a>
 
             <!-- Toggle button -->
@@ -45,14 +46,9 @@
                 <!-- Left links -->
 
                 <div class="d-flex align-items-center">
-                    <button type="button" class="btn btn-link px-3 me-2">
-                        Login
-                    </button>
                     <button type="button" class="btn btn-primary me-3">
-                        Sign up for free
+                        Convert
                     </button>
-                    <a class="btn btn-dark px-3" href="https://github.com/mdbootstrap/mdb-ui-kit" role="button"><i
-                            class="fab fa-github"></i></a>
                 </div>
             </div>
             <!-- Collapsible wrapper -->
@@ -60,6 +56,66 @@
         <!-- Container wrapper -->
     </nav>
     <!-- Navbar -->
+
+
+    <header>
+        <!-- Jumbotron -->
+        <div class="p-5 text-center bg-light">
+            <h1 class="mb-3">Image Converter</h1>
+            <a class="btn btn-primary" href="" role="button">Convert Now</a>
+        </div>
+        <!-- Jumbotron -->
+    </header>
+    <br><br>
+
+    <div class="container">
+        <!-- <div class="file-upload-container">
+            <label for="myFile" class="custom-file-upload">
+                <i class="fas fa-cloud-upload-alt"></i> Choose file
+                <input type="file" name="myFile" id="myFile" accept="image/*">
+            </label>
+        </div> -->
+
+        <div class="row">
+            <div class="col">
+                <div class="file-upload-container">
+                    <label for="imageFile" class="custom-file-upload">
+                        <i class="fas fa-cloud-upload-alt"></i> Choose file
+                        <input type="file" name="imageFile" id="imageFile" accept="image/*">
+                    </label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="image-preview-container">
+                    <img id="image-preview" src="#" alt="">
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-5">
+                <select class="form-select" aria-label="Default select example" id="fromInput">
+                    <option selected>Open this select menu</option>
+                    <option value="png">PNG</option>
+                    <option value="jpg">JPG</option>
+                </select>
+            </div>
+            <div class="col-md-5">
+                <select class="form-select" aria-label="Default select example" id="toInput">
+                    <option selected>Open this select menu</option>
+                    <option value="png">PNG</option>
+                    <option value="jpg">JPG</option>
+                </select>
+            </div>
+            <div class="col">
+                <button class="btn btn-primary">Convert</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+    <script src="js/nscr.js"></script>
 </body>
 
 </html>
